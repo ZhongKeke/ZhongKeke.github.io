@@ -1,0 +1,43 @@
+<html >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style media="screen" type="text/css">
+			img { display: none; }
+			body { overflow: hidden; }
+			#canvas { position: absolute; top: 0px; left: 0px; }
+		</style>
+		<script src="rainyday.js" type="text/javascript"></script>
+		<script type="text/javascript">
+ 			function demo() {
+				var engine = new RainyDay('canvas','demo2', 800, 650	);
+ 					engine.gravity = engine.GRAVITY_NON_LINEAR;
+ 					engine.trail = engine.TRAIL_DROPS;
+ 					engine.VARIABLE_GRAVITY_ANGLE = Math.PI / 8;
+					engine.rain([
+						engine.preset(0, 2, 0.5),
+						engine.preset(4, 4, 1)
+					], 50);
+ 			}
+		</script>
+		<title>轻蔑的小眼神！但是不给看</title>
+	</head>
+	<body onLoad="demo();">
+		<img id="demo2" src="123.jpg" />
+		<div id="cholder">
+
+			<canvas id="canvas"></canvas>
+		</div>
+		<div   style="background-color:#47E6F8;width:570px;height:960px;position:absolute;right:200px;top:0;right:0px;text-align:right;color:#F847A5" z-index="1000">
+	<p style="font-size: 20px;">嘿。宝宝，再过一会儿你生日就要过掉啦。</p>
+	<p style="font-size: 20px;">说没能第一个祝你生日快乐那就最后一个吧。
+	<p style="font-size: 20px;">还好最后一个这下没有错过了。 </p>
+	<p style="font-size: 20px;">想起第一次陪宝宝过生日还是在农大那也是第一次和宝宝独处。</p>
+	<p style="font-size: 20px;">也有第一次和宝宝一起在网吧。也是第一次和宝宝打伞。</p>
+	<p style="font-size: 20px;">我还觉得就是那一次开始才真正说下决心要追宝宝了。</p>
+	<p style="font-size: 20px;">宝宝。转眼就又到你的生日了啊。</p>
+	<p style="font-size: 20px;">送你的东西还喜欢吗。能陪着宝宝一起过生日也真是太开心了啊。 </p>
+	<p style="font-size: 20px;">宝宝。希望之后宝宝的每一个生日都是我陪在身边的。 </p>
+<p style="font-size: 20px;">宝宝。生日快乐。</p>
+<p style="font-size: 20px;">爱钟可欣真是太好了。</p>
+</div>
+	</body>
+</html>
