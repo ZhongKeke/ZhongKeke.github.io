@@ -525,7 +525,7 @@ margin-left:50%;
 #box02_text h1{
     font-size: 25px;
     font-weight: lighter;
-    color: #48D1CC;
+    color: #00FF7F;
     margin-top: 25px;
     text-align: center;
     position: relative;
@@ -539,7 +539,7 @@ margin-left:50%;
 .overline{
     width: 100%;
     height: 0;
-    border-bottom: 1px dashed #48D1CC;
+    border-bottom: 1px dashed #00FF7F;
     position: relative;
     right: -100%;
     -webkit-transition: all 0.5s;
@@ -552,7 +552,7 @@ margin-left:50%;
 	width:100%;
     font-size: 20px;
     font-weight: lighter;
-    color: #48D1CC;
+    color: #00FF7F;
     line-height: 38px;
     text-align: center;
     position: relative;
