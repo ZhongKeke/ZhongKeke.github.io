@@ -525,7 +525,7 @@ margin-left:50%;
 #box02_text h1{
     font-size: 25px;
     font-weight: lighter;
-    color: #00FF7F;
+    color: #48D1CC;
     margin-top: 25px;
     text-align: center;
     position: relative;
@@ -539,7 +539,7 @@ margin-left:50%;
 .overline{
     width: 100%;
     height: 0;
-    border-bottom: 1px dashed #00FF7F;
+    border-bottom: 1px dashed #48D1CC;
     position: relative;
     right: -100%;
     -webkit-transition: all 0.5s;
@@ -552,7 +552,7 @@ margin-left:50%;
 	width:100%;
     font-size: 20px;
     font-weight: lighter;
-    color: #00FF7F;
+    color: #48D1CC;
     line-height: 38px;
     text-align: center;
     position: relative;
@@ -592,7 +592,7 @@ margin-left:50%;
     height: 0;
     width: 100%;
     padding: 0 20px;
-    border:1px dashed #ffffff;
+    border:1px dashed pink;
     display: block;
 }
 
@@ -617,10 +617,10 @@ margin-left:50%;
     height: 0;
     width: 12px;
     height: 12px;
-    border: 4px solid #E7A98F;
+    border: 4px solid pink;
     display: block;
     z-index: 35;
-    background: #ffffff;
+    background: pink;
     border-radius: 50%;
     margin-top: -8px;
     margin-left: -8px;
@@ -629,14 +629,14 @@ margin-left:50%;
 .timeUl li div{
     height: 45%;
     width: 100%;
-    background-color: #444444;
+    background-color: pink;
     filter:alpha(opacity=90);  
     -moz-opacity:0.9;  
     -khtml-opacity: 0.9;  
     opacity: 0.9;  
     text-align: center;
-    color: #ffffff;
-    box-shadow: 10px 10px 5px #000000;
+    color: ##6495ED;
+    box-shadow: 10px 10px 5px ##FA8072;
 }
 
 .timeUl li:nth-child(2n) div{
