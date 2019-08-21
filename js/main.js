@@ -391,6 +391,7 @@ function imgChange(iB){
 
 var e_li = document.getElementById('timeUl').children;
 var li_times = 0;
+
 var left_div = document.getElementById('left_div');
 var right_div = document.getElementById('right_div');
 left_div.onclick = function () {
@@ -404,6 +405,7 @@ left_div.onclick = function () {
 }
 
 right_div.onclick = function () {
+
     if(li_times == (e_li.length-2)){
         li_times == e_li.length - 2;
     }

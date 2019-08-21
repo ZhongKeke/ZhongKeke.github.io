@@ -552,7 +552,7 @@ margin-left:0%;
 	width:100%;
     font-size: 18px;
     font-weight: lighter;
-    color: black;
+    color: rgba(153,0,102,0.8);
     line-height: 38px;
     text-align: left;
     position: relative;
@@ -576,7 +576,7 @@ margin-left:0%;
 
 .timeUl{
     height: 100%;
-    width: 160%;
+    width: 240%;
     position: relative;
     left: 0;
     -webkit-transition: all ease 0.8s;
@@ -603,7 +603,7 @@ margin-left:0%;
 }
 
 .timeUl li{
-    width: 15%;
+    width: 10%;
     float: left;
     height: 100%;
     position: relative;
@@ -637,6 +637,7 @@ margin-left:0%;
     text-align: center;
     color: ##6495ED;
     box-shadow: 10px 10px 5px #FA8072;
+
 }
 
 .timeUl li:nth-child(2n) div{
@@ -652,7 +653,9 @@ margin-left:0%;
 }
 
 .timeUl li div{
-    font-weight: normal;    
+    font-weight: normal; 
+    text-align: center;
+
 }
 
 .left_arrow,.right_arrow{
@@ -666,9 +669,10 @@ margin-left:0%;
 }
 
 .timeUl li div p{
-    line-height: 28px;
+    line-height: 18px;
     font-size: 18px;
     font-weight: lighter;
+    padding:120px 0;
 }
 
 .right_div{
