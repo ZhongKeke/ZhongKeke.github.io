@@ -394,25 +394,38 @@ var li_times = 0;
 
 var left_div = document.getElementById('left_div');
 var right_div = document.getElementById('right_div');
+var flag =false;
 left_div.onclick = function () {
-    // if(li_times == 0){
-    //     li_times = 0;
-    // }
-    // else{
+
+    if (flag) {
+        return;
+    }
+    if(li_times == 0){
+        li_times = 0;
+    }
+    else{
+        flag = true;
         document.getElementById('timeUl').style.left = document.getElementById('timeUl').offsetLeft + e_li[0].offsetWidth + 'px';
         li_times--;
-    // }
+        setTimeout(300,function(){
+            flag = false;
+        })
+    }
 }
 
 right_div.onclick = function () {
 
-    // if(li_times == (e_li.length-2)){
-    //     li_times == e_li.length - 2;
-    // }
-    // else{
+    if(li_times == (e_li.length-2)){
+        li_times == e_li.length - 2;
+    }
+    else{
+                flag = true;
         document.getElementById('timeUl').style.left = document.getElementById('timeUl').offsetLeft - e_li[0].offsetWidth +'px';
         li_times++;
-    // }
+          setTimeout(300,function(){
+            flag = false;
+        })
+    }
 }
 
 //手势事件
