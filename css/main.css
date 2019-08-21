@@ -497,7 +497,7 @@ body{
 }
 .box_content{
     width: 80%;
-    left: 10%;
+    left: 3%;
     position: absolute;
     z-index: 2;
 }
@@ -513,7 +513,7 @@ body{
 }
 
 #box02_text{
-margin-left:50%;
+margin-left:0%;
     width: 50%;
     min-width: 400px;
     float: right;
@@ -550,11 +550,11 @@ margin-left:50%;
 
 #box02_text p{
 	width:100%;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: lighter;
-    color: #48D1CC;
+    color: black;
     line-height: 38px;
-    text-align: center;
+    text-align: left;
     position: relative;
     right: -100%;
     -webkit-transition: all 0.5s;
@@ -603,7 +603,7 @@ margin-left:50%;
 }
 
 .timeUl li{
-    width: 25%;
+    width: 15%;
     float: left;
     height: 100%;
     position: relative;
@@ -1287,7 +1287,7 @@ margin-left:50%;
     }
     
     .box02_content{
-        top: 5rem;
+        top: 3rem;
         width: 100%;
         height: auto;
     }
