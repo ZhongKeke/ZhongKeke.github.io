@@ -407,24 +407,27 @@ left_div.onclick = function () {
         flag = true;
         document.getElementById('timeUl').style.left = document.getElementById('timeUl').offsetLeft + e_li[0].offsetWidth + 'px';
         li_times--;
-        setTimeout(300,function(){
+        setTimeout(function(){
             flag = false;
-        })
+        },500)
     }
 }
 
 right_div.onclick = function () {
 
+    if (flag) {
+        return;
+    }
     if(li_times == (e_li.length-2)){
         li_times == e_li.length - 2;
     }
     else{
-                flag = true;
+        flag = true;
         document.getElementById('timeUl').style.left = document.getElementById('timeUl').offsetLeft - e_li[0].offsetWidth +'px';
         li_times++;
-          setTimeout(300,function(){
+         setTimeout(function(){
             flag = false;
-        })
+        },500)
     }
 }
 
