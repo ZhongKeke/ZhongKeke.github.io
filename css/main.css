@@ -579,7 +579,7 @@ margin-top: 75px;
 
 .timeUl{
     height: 100%;
-    width: 320%;
+    width: 380%;
     position: relative;
     left: 0;
     -webkit-transition: all ease 0.8s;
@@ -606,7 +606,7 @@ margin-top: 75px;
 }
 
 .timeUl li{
-    width: 8%;
+    width: 6%;
     float: left;
     height: 100%;
     position: relative;
