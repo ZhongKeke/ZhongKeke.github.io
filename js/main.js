@@ -399,7 +399,7 @@ left_div.onclick = function () {
         li_times = 0;
     }
     else{
-        document.getElementById('timeUl').style.left = document.getElementById('timeUl').offsetLeft + e_li[0].offsetWidth + 'px';
+        document.getElementById('timeUl').style.left = document.getElementById('timeUl').offsetLeft + _li[0].offsetWidth+10 + 'px';
         li_times--;
     }
 }
@@ -410,7 +410,7 @@ right_div.onclick = function () {
         li_times == e_li.length - 2;
     }
     else{
-        document.getElementById('timeUl').style.left = document.getElementById('timeUl').offsetLeft - e_li[0].offsetWidth +'px';
+        document.getElementById('timeUl').style.left = document.getElementById('timeUl').offsetLeft - e_li[0].offsetWidth-10 +'px';
         li_times++;
     }
 }

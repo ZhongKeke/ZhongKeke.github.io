@@ -513,7 +513,8 @@ body{
 }
 
 #box02_text{
-margin-left:0%;
+margin-left:30%;
+margin-top: 20px;
     width: 50%;
     min-width: 400px;
     float: right;
@@ -552,7 +553,8 @@ margin-left:0%;
 	width:100%;
     font-size: 18px;
     font-weight: lighter;
-    color: rgba(153,0,102,0.8);
+    color: white;
+    font-family:"Microsoft Yahei";
     line-height: 38px;
     text-align: left;
     position: relative;
@@ -561,6 +563,7 @@ margin-left:0%;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
     transform: all 0.5s;
+
 }
 
 #box02_text p:hover{
@@ -576,7 +579,7 @@ margin-left:0%;
 
 .timeUl{
     height: 100%;
-    width: 240%;
+    width: 320%;
     position: relative;
     left: 0;
     -webkit-transition: all ease 0.8s;
@@ -603,7 +606,7 @@ margin-left:0%;
 }
 
 .timeUl li{
-    width: 10%;
+    width: 8%;
     float: left;
     height: 100%;
     position: relative;
@@ -672,7 +675,7 @@ margin-left:0%;
     line-height: 18px;
     font-size: 18px;
     font-weight: lighter;
-    padding:120px 0;
+    padding:110px 0;
 }
 
 .right_div{
