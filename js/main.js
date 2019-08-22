@@ -395,6 +395,7 @@ var li_times = 0;
 var left_div = document.getElementById('left_div');
 var right_div = document.getElementById('right_div');
 var timeUl_left =  document.getElementById('timeUl').offsetLeft;
+var flag = false;
 left_div.onclick = function () {
 
     if (flag) {
