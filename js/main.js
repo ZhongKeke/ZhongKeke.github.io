@@ -97,11 +97,11 @@
     }
 
     movegit();
-    var gitTimer=setInterval(movegit,1);
+    var gitTimer=setInterval(movegit,0.1);
     moveweibo();
-    var weiTimer=setInterval(moveweibo,1);
+    var weiTimer=setInterval(moveweibo,0.1);
     moveblog();
-    var blogTimer=setInterval(moveblog,1);
+    var blogTimer=setInterval(moveblog,0.1);
     
     //第一屏文字加载
      var boxOneTimer = setInterval(boxOne,800);
@@ -394,7 +394,7 @@ var li_times = 0;
 
 var left_div = document.getElementById('left_div');
 var right_div = document.getElementById('right_div');
-var flag =false;
+var timeUl_left =  document.getElementById('timeUl').offsetLeft;
 left_div.onclick = function () {
 
     if (flag) {
