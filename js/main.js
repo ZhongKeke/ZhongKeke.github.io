@@ -120,6 +120,7 @@ var box02_flag = false;       //还未曾到第二屏
 var box02_text = document.getElementById('box02_text').children; //第二屏文字
 var box02_index = 0;
 var box02_timer;
+var admin_url = "localhost:8080/webadmin/"
 
 
 function hasClass(obj, cls) {  
@@ -473,4 +474,47 @@ function outScroll(obj){
 	animaltemp.stop();
 	var a=obj.offsetHeight;
 	$(obj).css({marginTop:"0px"});
+}
+
+function liuyan(){
+    var message = "";
+    var data = new Object;
+    data.message = message;
+    $.ajax({
+        url:admin_url+"message/add",
+        type:"post",
+        dataType:"json",
+        data:JSON.stringify(data),
+        success:function(obj){
+            if(obj.code == 0){
+            layer.alert('留言成功');
+            }else{
+                layer.alert(obj.msg, {
+                    icon: 2,
+                    skin: 'layer-ext-moon' //该皮肤由layer.seaning.com友情扩展。关于皮肤的扩展规则，去这里查阅
+                  })
+            }
+        },
+    })
+}
+
+function liuyan(id){
+    var message = "";
+    var data = new Object;
+    data.message = message;
+    $.ajax({
+        url:admin_url+"message/del?i="+id,
+        type:"get",
+        dataType:"json",
+        success:function(obj){
+            if(obj.code == 0){
+            layer.alert('留言成功');
+            }else{
+                layer.alert(obj.msg, {
+                    icon: 2,
+                    skin: 'layer-ext-moon' //该皮肤由layer.seaning.com友情扩展。关于皮肤的扩展规则，去这里查阅
+                  })
+            }
+        },
+    })
 }
