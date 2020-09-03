@@ -26,7 +26,7 @@ var polaroidGallery = (function () {
         var i;
         for (i = 0; i < arr.length; i++) {
             out += '<figure id="' + i + '">' +
-                '<img src="img/' + arr[i].name + '" alt="' + arr[i].name + '"/>' +
+                '<img src="' + arr[i].name + '" alt="' + arr[i].name + '"/>' +
                 '<figcaption>' + arr[i].caption + '</figcaption>' +
                 '</figure>';
         }
@@ -80,7 +80,7 @@ var polaroidGallery = (function () {
     }
 
     function init() {
-        navbarHeight = document.getElementById("nav").offsetHeight;
+        navbarHeight = 60;
         navigation();
 
         window.addEventListener('resize', function () {
