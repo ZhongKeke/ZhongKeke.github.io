@@ -5,7 +5,7 @@ var polaroidGallery = (function () {
     var navbarHeight = 60;
     var resizeTimeout = null;
     var xmlhttp = new XMLHttpRequest();
-    var url = "data/data.json";
+    var url = "data/data1.json";
 
     function polaroidGallery() {
         observe();
@@ -13,8 +13,9 @@ var polaroidGallery = (function () {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                 var myArr = JSON.parse(xmlhttp.responseText);
                 setGallery(myArr);
-
-                init();
+                window.onload = function () {
+                    init();
+                }
             }
         };
         xmlhttp.open("GET", url, true);
@@ -25,8 +26,8 @@ var polaroidGallery = (function () {
         var out = "";
         var i;
         for (i = 0; i < arr.length; i++) {
-            out += '<figure id="' + i + '">' +
-                '<img src="' + arr[i].name + '" alt="' + arr[i].name + '"/>' +
+            out += '<figure style="pointer-events:all" id="' + i + '">' +
+                '<img  src="' + arr[i].name + '" alt="' + arr[i].name + '"/>' +
                 '<figcaption>' + arr[i].caption + '</figcaption>' +
                 '</figure>';
         }
@@ -42,7 +43,7 @@ var polaroidGallery = (function () {
                 if (MutationObserver) {
                     var obs = new MutationObserver(function (mutations, observer) {
                         if( mutations[0].addedNodes.length || mutations[0].removedNodes.length )
-                        callback(mutations);
+                            callback(mutations);
                     });
 
                     obs.observe(obj, { childList: true, subtree: false });
@@ -80,7 +81,8 @@ var polaroidGallery = (function () {
     }
 
     function init() {
-        navbarHeight = 60;
+        // navbarHeight = document.getElementById("nav").offsetHeight;
+        // navigation();
 
         window.addEventListener('resize', function () {
             if (resizeTimeout) {
@@ -93,6 +95,7 @@ var polaroidGallery = (function () {
                 }
             }, 100);
         });
+
     }
 
     function select(item) {
@@ -101,10 +104,9 @@ var polaroidGallery = (function () {
 
         var initWidth = dataSize[item.id].width;
         var initHeight = dataSize[item.id].height;
-
         var newWidth = (initWidth * scale);
         var newHeight = initHeight * (newWidth / initWidth);
-
+        console.log(dataSize[item.id])
         var x = (window.innerWidth - newWidth) / 2;
         var y = (window.innerHeight - navbarHeight - newHeight) / 2;
 
@@ -147,7 +149,28 @@ var polaroidGallery = (function () {
         }
     }
 
-
+    // function navigation() {
+    //     var next = document.getElementById('next');
+    //     var preview = document.getElementById('preview');
+    //
+    //     next.addEventListener('click', function () {
+    //         var currentIndex = Number(currentItem.id) + 1;
+    //         if (currentIndex >= dataLength) {
+    //             currentIndex = 0
+    //         }
+    //         select(dataSize[currentIndex].item);
+    //         shuffleAll();
+    //     });
+    //
+    //     preview.addEventListener('click', function () {
+    //         var currentIndex = Number(currentItem.id) - 1;
+    //         if (currentIndex < 0) {
+    //             currentIndex = dataLength - 1
+    //         }
+    //         select(dataSize[currentIndex].item);
+    //         shuffleAll();
+    //     })
+    // }
 
     return polaroidGallery;
 })();
