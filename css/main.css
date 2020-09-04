@@ -583,10 +583,6 @@ margin-top: 75px;
     overflow: hidden;
 }
 
-/*.box03_content::-webkit-scrollbar {*/
-/*    display: none;!*隐藏滚动条*!*/
-/*}*/
-
 .timeUl{
     height: 100%;
     width: 760%;
@@ -1347,7 +1343,6 @@ margin-top: 75px;
     .timeUl{
         width: auto;
         height: auto;
-
     }
     
     .timeUl::before {
