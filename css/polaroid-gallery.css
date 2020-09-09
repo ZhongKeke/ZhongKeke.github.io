@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'zhanku';
-    src: url('../font/LiXuKeManHuaTiv1-0-1.ttf') format('truetype');
+    src: url('http://image.zhongkk.com/LiXuKeManHuaTiv1-0-1.ttf') format('truetype');
 }
 
 .fullscreen {
@@ -52,7 +52,7 @@ figure figcaption {
     content: '';
     /*background: url(../images/icon/menu-ribbon-left.png), url(../images/icon/menu-ribbon-right.png), url(../images/icon/ribbon-tile.png);    background-position: top left, top right, top left;*/
 
-    background-image: url(../images/icon/menu-ribbon-left.png), url(../images/icon/menu-ribbon-right.png), url(../images/icon/ribbon-tile.png);    background-position: top left, top right, top left;
+    background-image: url(http://image.zhongkk.com/menu-ribbon-left.png), url(http://image.zhongkk.com/menu-ribbon-right.png), url(http://image.zhongkk.com/ribbon-tile.png);    background-position: top left, top right, top left;
     background-position: top left, top right, top left;
     background-repeat: no-repeat, no-repeat, repeat-x;
     background-clip: border-box, border-box, padding-box;

@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'Indie Flower';
-    src: url('../font/IndieFlower.ttf')  format('truetype');
+    src: url('http://image.zhongkk.com/IndieFlower.ttf')  format('truetype');
 }
 
 label{
