@@ -63,8 +63,7 @@ var polaroidGallery = (function () {
                         currentItem = item;
                         first = false;
                     }
-                    dataSize[item.id] = {item: item, width: item.offsetWidth, height: item.offsetHeight};
-
+                    dataSize[item.id] = {item: item, width: 250, height: 320};
                     dataLength++;
 
                     item.addEventListener('click', function () {
