@@ -1,6 +1,12 @@
 /*body {*/
 /*    background-color: #F2EBE2;*/
 /*}*/
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'zhanku';
+    src: url('../font/LiXuKeManHuaTiv1-0-1.ttf') format('truetype');
+}
 
 .fullscreen {
     width: 60%;
@@ -36,13 +42,33 @@ figure figcaption {
 }
 
 .navbar {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    top: 80px;
+    width: 30%;
     padding: 10px;
-    text-align: center;
-    background-color: black;
+    left: 28%;
+    height: 120px;
     z-index: 999;
+    position: absolute;
+    content: '';
+    /*background: url(../images/icon/menu-ribbon-left.png), url(../images/icon/menu-ribbon-right.png), url(../images/icon/ribbon-tile.png);    background-position: top left, top right, top left;*/
+
+    background-image: url(../images/icon/menu-ribbon-left.png), url(../images/icon/menu-ribbon-right.png), url(../images/icon/ribbon-tile.png);    background-position: top left, top right, top left;
+    background-position: top left, top right, top left;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-clip: border-box, border-box, padding-box;
+    background-origin: border-box, border-box, padding-box;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+}
+
+
+.nav_content {
+    color: #4f4f4f;
+    font-family: 'zhanku';
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
 }
 
 button {

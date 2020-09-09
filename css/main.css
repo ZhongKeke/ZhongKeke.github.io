@@ -6,6 +6,12 @@
     font-family: 'Microsoft Yahei', '宋体', arial, 'Hiragino Sans GB', Helvetica;
 }
 
+
+@font-face {
+    font-family: 'Indie Flower';
+    src: url('../font/IndieFlower.ttf')  format('truetype');
+}
+
 label{
     cursor:pointer;
 }
@@ -1094,6 +1100,11 @@ margin-top: 75px;
 
 .nav_li_on{
     color: red;
+    font-family: 'Indie Flower';
+}
+
+.nav_ul_li{
+    font-family: 'Indie Flower';
 }
 
 .hobby_img_info_mob{

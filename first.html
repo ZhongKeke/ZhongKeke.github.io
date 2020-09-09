@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 	<meta charset="UTF-8">
 	<title>草莓酱(MY_LOVE_FOR_U)</title>
@@ -152,8 +152,7 @@
         <div class="box" >
             <img class="box_bg" src="http://image.zhongkk.com/picQQ.jpg">
             
-<!--            <div class="box_content box03_content" id="huadong" onmousedown="huadong(event)" onmouseup="hudongUp()" >-->
-                <div class="box_content box03_content" >
+            <div class="box_content box03_content" id="huadong" onmousedown="huadong(event)" onmouseup="hudongUp()" >
 
                 <ul id="timeUl" class="timeUl">
             <!--         <li>
@@ -467,26 +466,26 @@
 <!--&lt;!&ndash;           <iframe style="width: 60%; height:80%;left: 30%;top:30%" id = "message" src="message/index.html"></iframe>&ndash;&gt;-->
 <!--        </div>-->
                 <div class="box" style="background-color: #F2EBE2;">
-                    <div id="gallery" class="fullscreen"></div>
-<!--                    <div id="nav" class="navbar">-->
-<!--                        <button id="preview">&lt; 前一张</button>-->
-<!--                        <button id="next">下一张 &gt;</button>-->
-<!--                    </div>-->
+<!--                    <div id="gallery" class="fullscreen"></div>-->
+<!--&lt;!&ndash;                    <div id="nav" class="navbar">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <button id="preview">&lt; 前一张</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <button id="next">下一张 &gt;</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
 
 
-                    <script type="text/javascript" src="js/polaroid-gallery.js"></script>
-                    <script>
-                        window.onload = function () {
-                            new polaroidGallery("data/data.json");
-                        }
-                    </script>
-<!--                    <div class="layui-carousel" id="test1" style="left: 2%">-->
-<!--                        <div carousel-item>-->
-<!--                            <iframe style="visibility: visible"  width="100%" height="100%" src="xiangce_index.html" ></iframe>-->
-<!--                            <iframe style="visibility: visible"  width="100%" height="100%" src="xiangce_index2.html" ></iframe>-->
+<!--                    <script type="text/javascript" src="js/polaroid-gallery.js"></script>-->
+<!--                    <script>-->
+<!--                        window.onload = function () {-->
+<!--                            new polaroidGallery("data/data.json");-->
+<!--                        }-->
+<!--                    </script>-->
+                    <div class="layui-carousel" id="test1" style="left: 3%">
+                        <div carousel-item>
+                            <iframe style="visibility: visible;border: none"  width="100%" height="100%" src="xiangce_index.html" ></iframe>
+                            <iframe style="visibility: visible;border: none"  width="100%" height="100%" src="xiangce_index2.html" ></iframe>
 
-<!--                        </div>-->
-<!--                    </div>-->
+                        </div>
+                    </div>
                 </div>
         <foot id="foot" class="foot">
             
@@ -501,8 +500,8 @@
     </div>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="layer/layer.js"></script>
-<!--    <script src="layui/layui.js"></script>-->
-<!--    <link rel="stylesheet" href="layui/css/layui.css" media="all">-->
+    <script src="layui/layui.js"></script>
+    <link rel="stylesheet" href="layui/css/layui.css" media="all">
         <script src="live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script>
 <script src="live2dw/lib/L2Dwidget.0.min.js"></script>
 <script>
@@ -515,21 +514,22 @@
     style="position: fixed; opacity: 1; right: 0px; bottom: 0; z-index: 99999; pointer-events: none;" ></canvas>
 </div>
 </body>
-<!--<script>-->
-<!--    layui.use('carousel', function(){-->
-<!--        var carousel = layui.carousel;-->
-<!--        //建造实例-->
-<!--        carousel.render({-->
-<!--            elem: '#test1'-->
-<!--            ,width: '96%' //设置容器宽度-->
-<!--            ,height: '100%'-->
-<!--            ,arrow: 'always' //始终显示箭头-->
-<!--            // ,anim: 'updown' //切换动画方式-->
-<!--            ,indicator: 'none'-->
-<!--            ,autoplay: false-->
-<!--        });-->
-<!--    });-->
-<!--</script>-->
+<script>
+    layui.use('carousel', function(){
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test1'
+            ,width: '94%' //设置容器宽度
+            ,height: '100%'
+            ,arrow: 'always' //始终显示箭头
+            // ,anim: 'updown' //切换动画方式
+            ,indicator: 'none'
+            ,autoplay: false
+        });
+    });
+</script>
+<script>
     !function(e,t,a){function n(){c(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 500%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"),o(),r()}function r(){for(var e=0;e<d.length;e++)d[e].alpha<=0?(t.body.removeChild(d[e].el),d.splice(e,1)):(d[e].y--,d[e].scale+=.004,d[e].alpha-=.013,d[e].el.style.cssText="left:"+d[e].x+"px;top:"+d[e].y+"px;opacity:"+d[e].alpha+";transform:scale("+d[e].scale+","+d[e].scale+") rotate(45deg);background:"+d[e].color+";z-index:99999");requestAnimationFrame(r)}function o(){var t="function"==typeof e.onclick&&e.onclick;e.onclick=function(e){t&&t(),i(e)}}function i(e){var a=t.createElement("div");a.className="heart",d.push({el:a,x:e.clientX-5,y:e.clientY-5,scale:1,alpha:1,color:s()}),t.body.appendChild(a)}function c(e){var a=t.createElement("style");a.type="text/css";try{a.appendChild(t.createTextNode(e))}catch(t){a.styleSheet.cssText=e}t.getElementsByTagName("head")[0].appendChild(a)}function s(){return"rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"}var d=[];e.requestAnimationFrame=function(){return e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||function(e){setTimeout(e,1e3/60)}}(),n()}(window,document);</script>
 </html>
 
