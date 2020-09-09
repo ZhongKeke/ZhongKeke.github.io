@@ -13,9 +13,7 @@ var polaroidGallery = (function () {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                 var myArr = JSON.parse(xmlhttp.responseText);
                 setGallery(myArr);
-                window.onload = function () {
-                    init();
-                }
+                init();
             }
         };
         xmlhttp.open("GET", url, true);
@@ -84,7 +82,7 @@ var polaroidGallery = (function () {
     function init() {
         // navbarHeight = document.getElementById("nav").offsetHeight;
         // navigation();
-
+        console.log(2);
         window.addEventListener('resize', function () {
             if (resizeTimeout) {
                 clearTimeout(resizeTimeout);
